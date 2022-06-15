@@ -24,6 +24,7 @@ foreach($data as $item) {
     }
 }
 $output .= ']}';
-header('Content-Type: application/json; charset=utf-8');
+header('Access-Control-Allow-Origin: *');
+header("Content-type: application/json; charset=utf-8");
 echo $output;
 ?>
