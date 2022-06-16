@@ -1,5 +1,5 @@
 <?php
-$json = file_get_contents('https://openapi.battmobiel.be/Vehicles/ActiveVehiclesflat');
+$json = file_get_contents('<redacted>/Vehicles/ActiveVehiclesflat');
 $data = json_decode($json, true);
 $output = '{"type": "FeatureCollection","features": [';
 $copy = $data;
